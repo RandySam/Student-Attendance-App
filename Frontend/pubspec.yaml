@@ -1,0 +1,70 @@
+name: binus_attendance
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- UI & Assets ---
+  image_picker: ^1.0.7
+  image_cropper: ^8.0.2
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.10
+  pinput: ^6.0.0
+
+  # --- Networking & Storage ---
+  http: ^1.2.0
+  dio: ^5.4.0
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
+
+  # --- File & Document Handling ---
+  pdf: ^3.10.4
+  printing: ^5.12.0
+  excel: ^4.0.0
+  open_filex: ^4.3.2
+
+  # --- Permissions ---
+  permission_handler: ^11.3.1
+
+  # --- Date & Calendar ---
+  intl: ^0.19.0
+  table_calendar: ^3.1.0
+
+  # --- Location ---
+  geolocator: ^12.0.0
+  geocoding: ^3.0.0
+
+  # --- Web Support ---
+  universal_html: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  
+  # SAYA PINDAHKAN KE SINI (Best Practice: Tools ditaruh di dev_dependencies)
+  flutter_launcher_icons: ^0.13.1 
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/Frame 69.png" # Pastikan nama file ini benar
+  min_sdk_android: 21
+
+  adaptive_icon_background: "#0090D1"
+  
+  # 2. Foreground (Logo Putih Anda)
+  adaptive_icon_foreground: "assets/images/Frame 69.png"
